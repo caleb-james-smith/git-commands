@@ -66,6 +66,15 @@ Example for local branch "dev".
 git merge dev
 ```
 
+Fetch and merge changes in one step.
+```
+git pull <remote_name> <branch_name>
+```
+Example for the remote "origin" and the branch "master". 
+```
+git pull origin master
+```
+
 Push changes to remote.
 ```
 git push <remote_name> <branch_name>
