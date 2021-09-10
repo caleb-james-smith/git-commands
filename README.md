@@ -1,10 +1,27 @@
 # git-commands
 
+## General
+
+Show current git configuration.
+```
+git config --list
+```
+
+Show current status.
+```
+git status
+```
+
+Show commit history.
+```
+git log
+```
+
 ## Remote
 
 Clone a repository.
 ```
-git clone <url>
+git clone <remote_url>
 ```
 
 Initialize a repository.
@@ -15,6 +32,16 @@ git init
 Check current remotes.
 ```
 git remote -v
+```
+
+Add remote.
+```
+git remote add <remote_name> <remote_url>
+```
+
+Remove remote.
+```
+git remote rm <remote_name>
 ```
 
 Fetch changes.
@@ -72,19 +99,24 @@ git branch -d <existing_branch_name>
 
 ## Changes
 
-Show current status.
-```
-git status
-```
-
-Show commit history.
-```
-git log
-```
-
 Show changes between branches.
 ```
 git diff <base_branch> <updated_branch>
+```
+
+Show changes on current branch.
+```
+git diff
+```
+
+Show changes to a file.
+```
+git diff <file_name>
+```
+
+Undo changes to file. WARNING: resets file to last committed version.
+```
+git checkout -- <file_name>
 ```
 
 Add file.
@@ -95,6 +127,11 @@ git add <path_to_file>
 Add directory and all contents.
 ```
 git add <path_to_directory>
+```
+
+Add all contents of current directory, including subdirectories.
+```
+git add .
 ```
 
 Commit changes after adding files.
