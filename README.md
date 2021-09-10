@@ -1,5 +1,14 @@
 # git-commands
 
+This README provides useful git commands.
+
+Git Resources:
+* [Documentation](https://git-scm.com/docs)
+* [Commands_1](https://training.github.com/downloads/github-git-cheat-sheet/)
+* [Commands_2](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
+* [Markdown_1](https://www.markdownguide.org/cheat-sheet/)
+* [Markdown_2](https://guides.github.com/features/mastering-markdown/)
+
 ## General
 
 Show current git configuration.
