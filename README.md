@@ -116,6 +116,33 @@ Delete branch.
 git branch -d <existing_branch_name>
 ```
 
+## Tags
+
+List current tags.
+```
+git tag
+```
+
+Create a new tag.
+```
+git tag <new_tag_name>
+```
+
+Create a new tag and include a description.
+```
+git tag <new_tag_name> -a "Describe this tag."
+```
+
+Push a single tag to remote.
+```
+git push origin <existing_tag_name>
+```
+
+Push all tags to remote.
+```
+git push origin --tags
+```
+
 ## Changes
 
 Show changes between branches.
