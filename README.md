@@ -4,6 +4,7 @@ This README provides useful git commands.
 
 Git Resources:
 * [Documentation](https://git-scm.com/docs)
+* [Tutorial](https://kbroman.org/github_tutorial)
 * [Setup ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * [Commands (1)](https://training.github.com/downloads/github-git-cheat-sheet/)
 * [Commands (2)](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
