@@ -64,6 +64,33 @@ Example for the remote "origin".
 git fetch -p origin
 ```
 
+Merge changes into current branch.
+```
+git merge <branch_name>
+```
+Example for the remote "origin" and the branch "master". 
+```
+git merge origin/master
+```
+
+Fetch and merge changes in one step.
+```
+git pull <remote_name> <branch_name>
+```
+Example for the remote "origin" and the branch "master". 
+```
+git pull origin master
+```
+
+Push changes to remote.
+```
+git push <remote_name> <branch_name>
+```
+Example for remote "origin" and branch "master".
+```
+git push origin master
+```
+
 ## Merge
 
 Merge changes into current branch.
@@ -96,24 +123,6 @@ If there are merge conflicts and you want to abort the merge, you can use this c
 git merge --abort
 ```
 This will restore the branch to the state before the merge.
-
-Fetch and merge changes in one step.
-```
-git pull <remote_name> <branch_name>
-```
-Example for the remote "origin" and the branch "master". 
-```
-git pull origin master
-```
-
-Push changes to remote.
-```
-git push <remote_name> <branch_name>
-```
-Example for remote "origin" and branch "master".
-```
-git push origin master
-```
 
 ## Branches
 
