@@ -64,6 +64,8 @@ Example for the remote "origin".
 git fetch -p origin
 ```
 
+## Merge
+
 Merge changes into current branch.
 ```
 git merge <branch_name>
@@ -76,6 +78,24 @@ Example for local branch "dev".
 ```
 git merge dev
 ```
+If there are merge conflicts, use
+```
+git status
+```
+to see which files have conflicts.
+You can edit and save these files, choosing what you want the final version to be.
+After editing and saving these files, you can add them and then commit the changes to finish the merge.
+```
+git add <path_to_file_1>
+git add <path_to_file_2>
+git add <path_to_file_3>
+git commit -m "Fixed merge conflicts"
+```
+If there are merge conflicts and you want to abort the merge, you can use this command.
+```
+git merge --abort
+```
+This will restore the branch to the state before the merge.
 
 Fetch and merge changes in one step.
 ```
