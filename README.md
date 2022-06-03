@@ -1,6 +1,6 @@
 # git-commands
 
-This README provides useful git commands.
+This README provides useful git commands and links for additional information.
 
 Git Resources:
 * [Documentation](https://git-scm.com/docs)
