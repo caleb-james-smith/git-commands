@@ -190,9 +190,16 @@ Show changes to a file.
 git diff <file_name>
 ```
 
-Undo changes to file. WARNING: resets file to last committed version.
+Undo local changes to a file.
+WARNING: resets a file to the last committed version. Uncommitted work will be lost.
 ```
 git checkout -- <file_name>
+```
+
+Undo local changes to all files.
+WARNING: resets all files to the last committed versions. Uncommitted work will be lost.
+```
+git reset --hard
 ```
 
 Add file.
