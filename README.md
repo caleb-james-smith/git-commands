@@ -227,3 +227,14 @@ Add and commit changes to all tracked files in one step.
 git commit -am "Describe changes in this commit message."
 ```
 
+Change most recent commit message. 
+```
+git commit --amend -m "New commit message"
+```
+
+Force push to remote branch.
+This is required after changing commit message if the commit was already pushed to the remote branch.
+```
+git push <remote> <branch> -f
+```
+
