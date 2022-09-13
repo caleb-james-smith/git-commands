@@ -202,6 +202,33 @@ WARNING: resets all files to the last committed versions. Uncommitted work will 
 git reset --hard
 ```
 
+Undo last commit (soft version).
+Using --soft maintains the changes as uncommitted local modifications.
+```
+git reset --soft HEAD~1
+```
+Then you may unstage changes if you like.
+```
+git restore --staged <file>
+```
+Then you may discard the unstaged changes if you like.
+WARNING: this removes these changes.
+```
+git restore <file>
+```
+
+Undo last commit (hard version).
+Using --hard does not keep the changes from the last commit.
+WARNING: removes changes from latest commit and returns to state before latest changes and commit.
+```
+git reset --hard HEAD~1
+```
+Force push reverted state to remote (run after git reset to revert commit locally).
+WARNING: removes latest commit from remote.
+```
+git push origin +HEAD
+```
+
 Add file.
 ```
 git add <path_to_file>
