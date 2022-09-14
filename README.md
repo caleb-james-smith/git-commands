@@ -113,9 +113,9 @@ to see which files have conflicts.
 You can edit and save these files, choosing what you want the final version to be.
 After editing and saving these files, you can add them and then commit the changes to finish the merge.
 ```
-git add <path_to_file_1>
-git add <path_to_file_2>
-git add <path_to_file_3>
+git add <file_name_1>
+git add <file_name_2>
+git add <file_name_3>
 git commit -m "Fixed merge conflicts"
 ```
 If there are merge conflicts and you want to abort the merge, you can use this command.
@@ -209,12 +209,18 @@ git reset --soft HEAD~1
 ```
 Then you may unstage changes if you like.
 ```
-git restore --staged <file>
+git reset HEAD <file_name>
 ```
 Then you may discard the unstaged changes if you like.
 WARNING: this removes these changes.
 ```
-git restore <file>
+git checkout -- <file_name>
+```
+
+Note: "git restore" commands only work for git versions 2.23+ .
+```
+git restore --staged <file_name>
+git restore <file_name>
 ```
 
 Undo last commit (hard version).
@@ -231,7 +237,7 @@ git push origin +HEAD
 
 Add file.
 ```
-git add <path_to_file>
+git add <file_name>
 ```
 
 Add directory and all contents.
