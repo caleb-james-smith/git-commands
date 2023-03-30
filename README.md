@@ -175,9 +175,9 @@ git push origin --tags
 
 ## Changes
 
-Show changes between branches.
+Show changes to a file.
 ```
-git diff <base_branch> <updated_branch>
+git diff <file_name>
 ```
 
 Show changes on current branch.
@@ -185,9 +185,14 @@ Show changes on current branch.
 git diff
 ```
 
-Show changes to a file.
+Show changes between branches.
 ```
-git diff <file_name>
+git diff <base_branch> <updated_branch>
+```
+
+Show changes between two commits.
+```
+git diff <old_commit> <new_commit>
 ```
 
 Undo local changes to a file.
