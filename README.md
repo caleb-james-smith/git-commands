@@ -131,6 +131,12 @@ Check current branches.
 git branch -v
 ```
 
+Other ways to show the current branch.
+```
+git rev-parse --abbrev-ref HEAD
+git branch --show-current
+```
+
 Create and move to a new branch.
 ```
 git checkout -b <new_branch_name>
@@ -144,6 +150,14 @@ git checkout <existing_branch_name>
 Delete branch.
 ```
 git branch -d <existing_branch_name>
+```
+
+## Commits
+
+Show the current commit.
+```
+git rev-parse HEAD
+git rev-parse --short HEAD
 ```
 
 ## Tags
