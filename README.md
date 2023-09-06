@@ -2,14 +2,17 @@
 
 This README provides useful git commands and links for additional information.
 
-Git Resources:
-* [Documentation](https://git-scm.com/docs)
-* [Tutorial](https://kbroman.org/github_tutorial)
-* [Setup ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-* [Commands (1)](https://training.github.com/downloads/github-git-cheat-sheet/)
-* [Commands (2)](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
-* [Markdown (1)](https://www.markdownguide.org/cheat-sheet/)
-* [Markdown (2)](https://guides.github.com/features/mastering-markdown/)
+Resources:
+* [Git Documentation](https://git-scm.com/docs)
+* [Git Tutorial](https://kbroman.org/github_tutorial)
+* [Git Commands (1)](https://training.github.com/downloads/github-git-cheat-sheet/)
+* [Git Commands (2)](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
+* [Setup SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+* [Markdown Syntax (1)](https://www.markdownguide.org/cheat-sheet/)
+* [Markdown Syntax (2)](https://guides.github.com/features/mastering-markdown/)
+* [Markdown Editor (1)](https://stackedit.io/)
+* [Markdown Editor (2)](https://dillinger.io/)
+* [Markdown Editor (3)](https://markdown-it.github.io/)
 
 ## General
 
