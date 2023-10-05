@@ -71,6 +71,7 @@ Merge changes into current branch.
 ```
 git merge <branch_name>
 ```
+
 Example for the remote "origin" and the branch "master". 
 ```
 git merge origin/master
@@ -80,6 +81,7 @@ Fetch and merge changes in one step.
 ```
 git pull <remote_name> <branch_name>
 ```
+
 Example for the remote "origin" and the branch "master". 
 ```
 git pull origin master
@@ -89,6 +91,7 @@ Push changes to remote.
 ```
 git push <remote_name> <branch_name>
 ```
+
 Example for remote "origin" and branch "master".
 ```
 git push origin master
@@ -100,19 +103,23 @@ Merge changes into current branch.
 ```
 git merge <branch_name>
 ```
+
 Example for the remote "origin" and the branch "master". 
 ```
 git merge origin/master
 ```
+
 Example for local branch "dev".
 ```
 git merge dev
 ```
+
 If there are merge conflicts, use
 ```
 git status
 ```
 to see which files have conflicts.
+
 You can edit and save these files, choosing what you want the final version to be.
 After editing and saving these files, you can add them and then commit the changes to finish the merge.
 ```
@@ -121,15 +128,17 @@ git add <file_name_2>
 git add <file_name_3>
 git commit -m "Fixed merge conflicts"
 ```
+
 If there are merge conflicts and you want to abort the merge, you can use this command.
 ```
 git merge --abort
 ```
+
 This will restore the branch to the state before the merge.
 
 ## Branches
 
-Check current branches.
+List branches.
 ```
 git branch -v
 ```
@@ -150,22 +159,19 @@ Move to an existing branch.
 git checkout <existing_branch_name>
 ```
 
-Delete branch.
+Delete a branch.
 ```
 git branch -d <existing_branch_name>
 ```
 
-## Commits
-
-Show the current commit.
+Push a branch to remote.
 ```
-git rev-parse HEAD
-git rev-parse --short HEAD
+git push origin <existing_branch_name>
 ```
 
 ## Tags
 
-List current tags.
+List tags.
 ```
 git tag
 ```
@@ -185,6 +191,11 @@ Checkout an existing tag.
 git checkout <existing_tag_name>
 ```
 
+Delete a tag.
+```
+git tag -d <existing_tag_name>
+```
+
 Push a single tag to remote.
 ```
 git push origin <existing_tag_name>
@@ -196,6 +207,12 @@ git push origin --tags
 ```
 
 ## Changes
+
+Show the current commit.
+```
+git rev-parse HEAD
+git rev-parse --short HEAD
+```
 
 Show changes to a file.
 ```
