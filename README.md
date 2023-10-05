@@ -58,7 +58,7 @@ Remove remote.
 git remote rm <remote_name>
 ```
 
-Fetch changes.
+Fetch changes (latest branches, tags, etc.):
 ```
 git fetch -p <remote_name>
 ```
@@ -178,6 +178,11 @@ git tag <new_tag_name>
 Create a new tag and include a description.
 ```
 git tag <new_tag_name> -a "Describe this tag."
+```
+
+Checkout an existing tag.
+```
+git checkout <existing_tag_name>
 ```
 
 Push a single tag to remote.
