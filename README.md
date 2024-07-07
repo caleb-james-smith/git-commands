@@ -4,14 +4,14 @@ This README provides useful git commands and links for additional information.
 
 ## Table of Contents
 
-* [Resources]
-* [General]
-* [Remotes]
-* [Branches]
-* [Tags]
-* [Merge]
-* [Rebase]
-* [Changes]
+* [Resources](#resources)
+* [General](#general)
+* [Remotes](#remotes)
+* [Branches](#branches)
+* [Tags](#tags)
+* [Merge](#merge)
+* [Rebase](#rebase)
+* [Changes](#changes)
 
 ## Resources
 
