@@ -4,9 +4,7 @@ This README provides useful git commands and links for additional information.
 
 ## Table of Contents
 
-Testing Resources link; need to change to lowercase.
-
-* [Resources](#Resources)
+* [Resources](#resources)
 * [General](#general)
 * [Remotes](#remotes)
 * [Branches](#branches)
@@ -15,7 +13,7 @@ Testing Resources link; need to change to lowercase.
 * [Rebase](#rebase)
 * [Changes](#changes)
 
-<a name="Resources"/>
+<a name="resources"/>
 
 ## Resources
 
