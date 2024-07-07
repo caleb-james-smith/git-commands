@@ -2,16 +2,28 @@
 
 This README provides useful git commands and links for additional information.
 
-Resources:
+## Table of Contents
+
+* [Resources]
+* [General]
+* [Remotes]
+* [Branches]
+* [Tags]
+* [Merge]
+* [Rebase]
+* [Changes]
+
+## Resources
+
 * [Git Documentation](https://git-scm.com/docs)
 * [Git Tutorial](https://kbroman.org/github_tutorial)
+* [Setup SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * [Git Commands (1)](https://training.github.com/downloads/github-git-cheat-sheet/)
 * [Git Commands (2)](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
 * [Git Merge (1)](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merging)
 * [Git Rebase (1)](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
 * [Git Rebase (2)](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 * [Git Merge vs. Rebase (1)](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
-* [Setup SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * [Markdown Syntax (1)](https://www.markdownguide.org/cheat-sheet/)
 * [Markdown Syntax (2)](https://guides.github.com/features/mastering-markdown/)
 * [Markdown Editor (1)](https://stackedit.io/)
@@ -35,7 +47,7 @@ Show commit history.
 git log
 ```
 
-## Remote
+## Remotes
 
 Clone a repository.
 ```
@@ -134,6 +146,43 @@ Push a branch to remote.
 git push origin <existing_branch_name>
 ```
 
+## Tags
+
+List tags.
+```
+git tag
+```
+
+Create a new tag.
+```
+git tag <new_tag_name>
+```
+
+Create a new tag and include a description.
+```
+git tag <new_tag_name> -a "Describe this tag."
+```
+
+Checkout an existing tag.
+```
+git checkout <existing_tag_name>
+```
+
+Delete a tag.
+```
+git tag -d <existing_tag_name>
+```
+
+Push a single tag to remote.
+```
+git push origin <existing_tag_name>
+```
+
+Push all tags to remote.
+```
+git push origin --tags
+```
+
 ## Merge
 
 Merge changes from another branch (branch_2) into the current branch (branch_1).
@@ -198,43 +247,6 @@ git rebase --continue
 If there are rebase conflicts and you want to abort the rebase, you can use this command.
 ```
 git rebase --abort
-```
-
-## Tags
-
-List tags.
-```
-git tag
-```
-
-Create a new tag.
-```
-git tag <new_tag_name>
-```
-
-Create a new tag and include a description.
-```
-git tag <new_tag_name> -a "Describe this tag."
-```
-
-Checkout an existing tag.
-```
-git checkout <existing_tag_name>
-```
-
-Delete a tag.
-```
-git tag -d <existing_tag_name>
-```
-
-Push a single tag to remote.
-```
-git push origin <existing_tag_name>
-```
-
-Push all tags to remote.
-```
-git push origin --tags
 ```
 
 ## Changes
