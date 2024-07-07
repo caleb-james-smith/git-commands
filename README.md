@@ -4,6 +4,9 @@ This README provides useful git commands and links for additional information.
 
 ## Table of Contents
 
+Testing Resources link; need to change to lowercase.
+Also testing <a> vs. <a/>; need to change to <a/>.
+
 * [Resources](#Resources)
 * [General](#general)
 * [Remotes](#remotes)
@@ -12,6 +15,8 @@ This README provides useful git commands and links for additional information.
 * [Merge](#merge)
 * [Rebase](#rebase)
 * [Changes](#changes)
+
+<a name="Resources">
 
 ## Resources
 
@@ -26,9 +31,12 @@ This README provides useful git commands and links for additional information.
 * [Git Merge vs. Rebase (1)](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 * [Markdown Syntax (1)](https://www.markdownguide.org/cheat-sheet/)
 * [Markdown Syntax (2)](https://guides.github.com/features/mastering-markdown/)
+* [Markdown Syntax (3)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Markdown Editor (1)](https://stackedit.io/)
 * [Markdown Editor (2)](https://dillinger.io/)
 * [Markdown Editor (3)](https://markdown-it.github.io/)
+
+<a name="general">
 
 ## General
 
@@ -46,6 +54,8 @@ Show commit history.
 ```
 git log
 ```
+
+<a name="remotes">
 
 ## Remotes
 
@@ -113,6 +123,8 @@ Example for remote "origin" and branch "master".
 git push origin master
 ```
 
+<a name="branches">
+
 ## Branches
 
 List branches.
@@ -145,6 +157,8 @@ Push a branch to remote.
 ```
 git push origin <existing_branch_name>
 ```
+
+<a name="tags">
 
 ## Tags
 
@@ -182,6 +196,8 @@ Push all tags to remote.
 ```
 git push origin --tags
 ```
+
+<a name="merge">
 
 ## Merge
 
@@ -225,6 +241,8 @@ git merge --abort
 
 This will restore the branch to the state before the merge.
 
+<a name="rebase">
+
 ## Rebase
 
 Rebase changes from the current branch (branch_1) onto another branch (branch_2). 
@@ -248,6 +266,8 @@ If there are rebase conflicts and you want to abort the rebase, you can use this
 ```
 git rebase --abort
 ```
+
+<a name="changes">
 
 ## Changes
 
