@@ -4,7 +4,7 @@ This README provides useful git commands and links for additional information.
 
 ## Table of Contents
 
-* [Resources](#resources)
+* [Resources](#Resources)
 * [General](#general)
 * [Remotes](#remotes)
 * [Branches](#branches)
