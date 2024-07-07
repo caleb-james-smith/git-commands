@@ -7,6 +7,10 @@ Resources:
 * [Git Tutorial](https://kbroman.org/github_tutorial)
 * [Git Commands (1)](https://training.github.com/downloads/github-git-cheat-sheet/)
 * [Git Commands (2)](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
+* [Git Merge (1)](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merging)
+* [Git Rebase (1)](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
+* [Git Rebase (2)](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
+* [Git Merge vs. Rebase (1)](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 * [Setup SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * [Markdown Syntax (1)](https://www.markdownguide.org/cheat-sheet/)
 * [Markdown Syntax (2)](https://guides.github.com/features/mastering-markdown/)
@@ -97,45 +101,6 @@ Example for remote "origin" and branch "master".
 git push origin master
 ```
 
-## Merge
-
-Merge changes into current branch.
-```
-git merge <branch_name>
-```
-
-Example for the remote "origin" and the branch "master". 
-```
-git merge origin/master
-```
-
-Example for local branch "dev".
-```
-git merge dev
-```
-
-If there are merge conflicts, use
-```
-git status
-```
-to see which files have conflicts.
-
-You can edit and save these files, choosing what you want the final version to be.
-After editing and saving these files, you can add them and then commit the changes to finish the merge.
-```
-git add <file_name_1>
-git add <file_name_2>
-git add <file_name_3>
-git commit -m "Fixed merge conflicts"
-```
-
-If there are merge conflicts and you want to abort the merge, you can use this command.
-```
-git merge --abort
-```
-
-This will restore the branch to the state before the merge.
-
 ## Branches
 
 List branches.
@@ -167,6 +132,72 @@ git branch -d <existing_branch_name>
 Push a branch to remote.
 ```
 git push origin <existing_branch_name>
+```
+
+## Merge
+
+Merge changes from another branch (branch_2) into the current branch (branch_1).
+```
+git checkout <branch_1>
+git merge <branch_2>
+```
+
+Example to merge "origin/master" into "master".
+```
+git checkout master
+git merge origin/master
+```
+
+Example to merge the local branch "dev" into "master".
+```
+git checkout master
+git merge dev
+```
+
+If there are merge conflicts, use
+```
+git status
+```
+to see which files have conflicts.
+
+You can edit and save these files, choosing what you want the final version to be.
+After editing and saving these files, you can add them and then commit the changes to finish the merge.
+```
+git add <file_name_1>
+git add <file_name_2>
+git add <file_name_3>
+git commit -m "Fixed merge conflicts"
+```
+
+If there are merge conflicts and you want to abort the merge, you can use this command.
+```
+git merge --abort
+```
+
+This will restore the branch to the state before the merge.
+
+## Rebase
+
+Rebase changes from the current branch (branch_1) onto another branch (branch_2). 
+```
+git checkout <branch_1>
+git rebase <branch_2>
+```
+
+Example to rebase your development branch "experiment" onto the main branch "master":
+```
+git checkout experiment
+git rebase master
+```
+
+After you address each issue during the rebase, you can use this command to continue the rebase:
+```
+git rebase --continue
+```
+
+If there are rebase conflicts and you want to abort the rebase, you can use this command.
+```
+git rebase --abort
 ```
 
 ## Tags
