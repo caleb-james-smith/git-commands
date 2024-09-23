@@ -140,6 +140,11 @@ Create and move to a new branch.
 git checkout -b <new_branch_name>
 ```
 
+Create and move to a new branch based on an existing tag.
+```
+git checkout -b <new_branch_name> <existing_tag_name>
+```
+
 Move to an existing branch.
 ```
 git checkout <existing_branch_name>
