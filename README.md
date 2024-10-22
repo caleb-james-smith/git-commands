@@ -359,6 +359,16 @@ Add all contents of current directory, including subdirectories.
 git add .
 ```
 
+Remove file.
+```
+git rm <file_name>
+```
+
+Move (rename) file; this can also be done with rm and add.
+```
+git mv <old_file_name> <new_file_name>
+```
+
 Commit changes after adding files.
 ```
 git commit -m "Describe changes in this commit message."
