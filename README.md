@@ -136,6 +136,16 @@ git rev-parse --abbrev-ref HEAD
 git branch --show-current
 ```
 
+Create new branch.
+```
+git branch <new_branch_name>
+```
+
+Move to an existing branch.
+```
+git checkout <existing_branch_name>
+```
+
 Create and move to a new branch.
 ```
 git checkout -b <new_branch_name>
@@ -144,11 +154,6 @@ git checkout -b <new_branch_name>
 Create and move to a new branch based on an existing tag.
 ```
 git checkout -b <new_branch_name> <existing_tag_name>
-```
-
-Move to an existing branch.
-```
-git checkout <existing_branch_name>
 ```
 
 Rename the current branch.
