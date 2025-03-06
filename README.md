@@ -81,10 +81,11 @@ Remove remote.
 git remote rm <remote_name>
 ```
 
-Fetch changes (latest branches, tags, etc.):
+Fetch changes (latest branches, tags, etc.).
 ```
 git fetch -p <remote_name>
 ```
+
 Example for the remote "origin".
 ```
 git fetch -p origin
@@ -148,6 +149,16 @@ git checkout -b <new_branch_name> <existing_tag_name>
 Move to an existing branch.
 ```
 git checkout <existing_branch_name>
+```
+
+Rename the current branch.
+```
+git branch -m <new_branch_name>
+```
+
+Rename any branch (does not have to be the current branch).
+```
+git branch -m <old_branch_name> <new_branch_name>
 ```
 
 Delete a branch.
